@@ -10,7 +10,6 @@ def totalNumbers(digits):
                 if(k == j or k == i):
                     continue
                 num = int(str(digits[i]) + str(digits[j]) + str(digits[k]))
-                print(num)
                 if(num % 2 ==0 and num not in useit and len(str(num))==3):
                     res+=1
                     useit.add(int(str(digits[i]) + str(digits[j]) + str(digits[k])))
